@@ -3,5 +3,3 @@ pandas
 matplotlib
 plotly
 numpy
-io
-pathlib
