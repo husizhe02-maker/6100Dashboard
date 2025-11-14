@@ -82,11 +82,11 @@ def transfer_long_table(df):
     df_plot['Prop.']=df_plot['Employment']/df_plot['Total Employment']*100
     return df_plot
 
-# Title
-st.title("Employment Insights by Gender 👨‍💼👩‍💼")
+
 # User Interface
 if choice == "👩 Gender":
-
+    # Title
+    st.title("Employment Insights by Gender 👨‍💼👩‍💼")
     # Chart 1
     col1, col2 = st.columns((2))
 
@@ -463,6 +463,7 @@ if choice == "👩 Gender":
         fig.update_layout(showlegend=False)
         st.plotly_chart(fig,use_container_width=True)
 else:
+    st.title("Employment Insights by Age 👶🧓")
     DATA_PATH = Path("M182171-table.csv")
     # Chart 1: Average Age of Employed Residents
 
